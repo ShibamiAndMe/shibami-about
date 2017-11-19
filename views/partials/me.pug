@@ -1,0 +1,9 @@
+//-- Me
+article#me.panel
+	header
+		h1= (data.me.name + ' ' + data.me.lastName)
+		p= data.me.prof
+	a.jumplink.pic(href='#work')
+		span.arrow.icon.fa-chevron-right
+			span See my work
+		img(src='assets/images/me.jpg', alt='')

@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	//-- Wrapper
+	#wrapper
+		//-- Nav
+		nav#nav
+			a.icon.fa-home.active(href='#me')
+				span Home
+			a.icon.fa-folder(href='#work')
+				span Work
+			a.icon.fa-user-circle-o(href='#social-media')
+				span Social Media
+			a.icon.fa-envelope(href='#contact')
+				span Contact
+		//-- Main
+		#main
+			//-- Me
+			include partials/me
+			//-- Work
+			include partials/work
+			//-- Social Media
+			include partials/social_media
+			//-- Contact
+			include partials/contact
