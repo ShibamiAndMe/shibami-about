@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start:dev": "DEBUG=shibami-about:* nodemon --watch app.js --watch routes --watch bin/www ./bin/www"
+    "start:dev": "DEBUG=shibami-about:* nodemon --watch app.js --watch routes --watch bin/www --watch data/about.me.json ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.18.2",

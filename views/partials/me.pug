@@ -2,7 +2,7 @@
 article#me.panel
 	header
 		h1= (data.me.name + ' ' + data.me.lastName)
-		p= data.me.prof
+		p!= data.me.prof
 	a.jumplink.pic(href='#work')
 		span.arrow.icon.fa-chevron-right
 			span See my work
