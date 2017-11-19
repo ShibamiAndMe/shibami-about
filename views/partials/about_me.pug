@@ -1,0 +1,24 @@
+//-- About Me
+article#social-media.panel
+	header
+		h1 About Me
+	a.jumplink.pic(href='#contact')
+		span.arrow.icon.fa-chevron-right
+			span Contact me
+	p= data.aboutMe.text
+	section
+		.row(style='text-align:center;')
+			div(class='12u 12u$(mobile)')
+				ul.social-icons.icon-circle.list-unstyled.list-inline
+					li
+						a(href= data.aboutMe.socialMedia.twitter, target='_blank')
+							i.fa.fa-twitter
+					li
+						a(href= data.aboutMe.socialMedia.facebook, target='_blank')
+							i.fa.fa-facebook
+					li
+						a(href= data.aboutMe.socialMedia.instagram, target='_blank')
+							i.fa.fa-instagram
+					li
+						a(href= data.aboutMe.socialMedia.linkedin, target='_blank')
+							i.fa.fa-linkedin
